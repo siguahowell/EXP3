@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 int main()
@@ -37,6 +38,7 @@ int main()
     total= sum;
     cout<< "The Average is "<<average<<endl;
     cout<<"The total is "<<total<<endl;
-
+    
+    getch();
     return 0;
 }
