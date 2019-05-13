@@ -7,10 +7,13 @@ int main ()
 	i=0;
   for(i = 0; i < 10; ++i)
     {
+    	  
        cout << "Enter Number " << i+1 << " : ";
        cin >> arr[i];
        sum += arr[i];
+   
     }
+       
     max = arr[0];
     for (i = 0; i < 10; i++)
     {
