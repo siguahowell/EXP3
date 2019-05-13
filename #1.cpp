@@ -1,44 +1,32 @@
-#include <iostream>
-#include <conio.h>
+#include<iostream>
+#include<conio.h>
 using namespace std;
-
-int main()
+int main ()
 {
-    int i, n;
-    float arr[10], sum=0, average,total,max,min;
-
-   
-
-// input lang ng input
-    for(i = 0; i < 10; ++i)
+    int arr[10], n, i, max, min,sum;
+	i=0;
+  for(i = 0; i < 10; ++i)
     {
-       cout << "Enter Number " << i + 1 << " : ";
+       cout << "Enter Number " << i+1 << " : ";
        cin >> arr[i];
        sum += arr[i];
     }
-// malaking number
-
-    for(i = 1;i < 10; ++i)
+    max = arr[0];
+    for (i = 0; i < 10; i++)
     {
-
-       if(arr[0] < arr[i]) (arr[0] = arr[i]);
-       max = arr[0];
+        if (max < arr[i])
+            max = arr[i];
     }
-// maliit number
-    for(i = 1;i < 10; ++i)
+    min = arr[0];
+    for (i = 0; i < 10; i++)
     {
-
-       if(arr[0] > arr[i]) (arr[0] = arr[i]);
-       min=arr[0];
+        if (min > arr[i])
+            min = arr[i];
     }
-//output
-    cout << "Largest element = " <<max<<endl;
-    cout<<"smallest element = "<<min<<endl;
-    average = sum / 10;
-    total= sum;
-    cout<< "The Average is "<<average<<endl;
-    cout<<"The total is "<<total<<endl;
-    
+    cout << "Largest element : " << max<<endl;
+    cout << "Smallest element : " << min<<endl;
+    cout<<"The total of the elements is: "<<sum<<endl;
+    cout<<"the average of the elements are: "<<sum/10<<endl;
     getch();
     return 0;
 }
